@@ -14,6 +14,9 @@
 		FD939A9519C83724001ABCFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD939A9419C83724001ABCFF /* Images.xcassets */; };
 		FD939A9819C83724001ABCFF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD939A9619C83724001ABCFF /* LaunchScreen.xib */; };
 		FD939AA419C83724001ABCFF /* iPhone_Size_ApplyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD939AA319C83724001ABCFF /* iPhone_Size_ApplyTests.m */; };
+		FD939AAE19C83F90001ABCFF /* Display_4S.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD939AAD19C83F90001ABCFF /* Display_4S.storyboard */; };
+		FD939AB019C83FAA001ABCFF /* Display_6.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD939AAF19C83FAA001ABCFF /* Display_6.storyboard */; };
+		FD939AB219C83FBF001ABCFF /* Display_6Plus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD939AB119C83FBF001ABCFF /* Display_6Plus.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		FD939A9D19C83724001ABCFF /* iPhone Size ApplyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iPhone Size ApplyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD939AA219C83724001ABCFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD939AA319C83724001ABCFF /* iPhone_Size_ApplyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPhone_Size_ApplyTests.m; sourceTree = "<group>"; };
+		FD939AAD19C83F90001ABCFF /* Display_4S.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Display_4S.storyboard; sourceTree = "<group>"; };
+		FD939AAF19C83FAA001ABCFF /* Display_6.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Display_6.storyboard; sourceTree = "<group>"; };
+		FD939AB119C83FBF001ABCFF /* Display_6Plus.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Display_6Plus.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 				FD939A8E19C83724001ABCFF /* ViewController.h */,
 				FD939A8F19C83724001ABCFF /* ViewController.m */,
 				FD939A9119C83724001ABCFF /* Main.storyboard */,
+				FD939AAD19C83F90001ABCFF /* Display_4S.storyboard */,
+				FD939AAF19C83FAA001ABCFF /* Display_6.storyboard */,
+				FD939AB119C83FBF001ABCFF /* Display_6Plus.storyboard */,
 				FD939A9419C83724001ABCFF /* Images.xcassets */,
 				FD939A9619C83724001ABCFF /* LaunchScreen.xib */,
 				FD939A8719C83724001ABCFF /* Supporting Files */,
@@ -199,6 +208,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD939AB219C83FBF001ABCFF /* Display_6Plus.storyboard in Resources */,
+				FD939AB019C83FAA001ABCFF /* Display_6.storyboard in Resources */,
+				FD939AAE19C83F90001ABCFF /* Display_4S.storyboard in Resources */,
 				FD939A9319C83724001ABCFF /* Main.storyboard in Resources */,
 				FD939A9819C83724001ABCFF /* LaunchScreen.xib in Resources */,
 				FD939A9519C83724001ABCFF /* Images.xcassets in Resources */,
@@ -346,6 +358,7 @@
 				INFOPLIST_FILE = "iPhone Size Apply/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -356,6 +369,7 @@
 				INFOPLIST_FILE = "iPhone Size Apply/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -412,6 +426,7 @@
 				FD939AA919C83724001ABCFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD939AAA19C83724001ABCFF /* Build configuration list for PBXNativeTarget "iPhone Size ApplyTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +435,7 @@
 				FD939AAC19C83724001ABCFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

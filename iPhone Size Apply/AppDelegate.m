@@ -17,6 +17,36 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Display sizes of iPhones are as follows.
+    // iPhone 4S --> 3.5 inch(960×640)(480x320)
+    // iPhone 5, 5c, 5s, iPod touch 5G --> 4 inch(Defaultにする=Main.storyboardにする)
+    // iPhone 6 --> 4.7 inch(1334x750)(667x375)
+    // iPhone 6 Plus --> 5.5 inch(1920×1080)downsampling<--(2208x1242)(736x414)
+    
+    // アプリ実行端末のディスプレイサイズの高さを取得
+    CGRect display = [UIScreen mainScreen].bounds;
+    
+    // 取得ディスプレイに対応したStoryBoardをrootViewController(最初に表示されるもの)にする。
+    if (display.size.height == 480) { // iPhone 4S の場合 (Unit is Point.)
+        UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Display_4S" bundle:nil];
+        UIViewController* rootViewController = [storyboard instantiateInitialViewController];
+        self.window.rootViewController = rootViewController;
+        
+    } else if (display.size.height == 667) { // iPhone 6 の場合
+        UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Display_6" bundle:nil];
+        UIViewController* rootViewController = [storyboard instantiateInitialViewController];
+        self.window.rootViewController = rootViewController;
+        
+    } else if (display.size.height == 736) { // iPhone 6 Plus の場合
+        UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Display_6Plus" bundle:nil];
+        UIViewController* rootViewController = [storyboard instantiateInitialViewController];
+        self.window.rootViewController = rootViewController;
+    }
+    
+    // ディスプレイのポイント数などは以下参照
+    // http://stackoverflow.com/questions/25755443/iphone-6-plus-resolution-confusion-xcode-or-apples-website
+    
     return YES;
 }
 
